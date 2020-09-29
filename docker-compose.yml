@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  web:
+    build: .
+    volumes:
+      - ./student-record:/var/www/html
+    ports:
+      - 80:80
+
+  db:
+    image: mysql
+    volumes:
+      - ./db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: students_record
+    ports:
+      - 3306:3306
