@@ -4,8 +4,6 @@ Manage Student information | CRUD
 
 Built in HTML, CSS, JavaScript, PHP, and MySQL
 
-Demo: http://188.166.244.85
-
 ### Screenshots
 
 **Home:**
